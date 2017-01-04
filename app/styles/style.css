@@ -1,0 +1,130 @@
+.sectionHeader {
+  background-color:grey;
+  text-align:right;
+  padding: 5px;
+  font-size: 11pt;
+}
+
+#list {
+  width:300px;
+  height:600px;
+  overflow: scroll;
+}
+
+.listItem {
+  padding: 10px;
+  border-bottom:1px solid grey;
+}
+
+.data {
+  margin:5px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.text {
+  font-size: 15pt;
+  color: green;
+}
+.time {
+  font-size: 12pt;
+}
+
+.app {
+  display: flex;
+  flex-flow: row wrap;
+  background-color: #DED9D9;
+}
+
+.unit{
+  font-size: 10pt;
+}
+
+.circle-highlighted {
+  stroke: yellow;
+  stroke-width:7;
+}
+
+.tooltipMeasurement {
+  font-size:10pt;
+  color:orange;
+}
+
+.chartWrapper {
+  margin-left:50px;
+}
+
+.axis path,
+.axis line {
+  fill: none;
+  stroke: #000;
+  shape-rendering: crispEdges;
+}
+
+.dot {
+  stroke: #000;
+}
+
+.tooltip {
+  position: absolute;
+  width: 200px;
+  height: 28px;
+  pointer-events: none;
+}
+
+.header {
+  height: 100px;
+  flex: 1 100%;
+
+}
+
+.imageSection {
+  flex: 1 100%;
+  display: flex;
+  flex-flow: row;
+  justify-content: center;
+  align-items: center;
+  margin:20px;
+}
+
+
+.image {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+}
+
+.nav {
+  flex: 1 100%;
+  display: flex;
+  flex-flow: row;
+  justify-content: center;
+  align-items: center;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  list-style: none;
+}
+ul li {
+  display: inline;
+}
+
+ul li a {
+  padding: .2em 1em;
+  color: #fff;
+  background-color: #036;
+  margin: 1px;
+}
+
+ul li a:hover {
+  color: #fff;
+  background-color: #8094F7;
+}
