@@ -22068,15 +22068,6 @@
 	            null,
 	            _react2.default.createElement(
 	              'a',
-	              { href: '#Summary' },
-	              'Summary'
-	            )
-	          ),
-	          _react2.default.createElement(
-	            'li',
-	            null,
-	            _react2.default.createElement(
-	              'a',
 	              { href: '#Projects' },
 	              'Projects'
 	            )
@@ -22152,11 +22143,6 @@
 	      return _react2.default.createElement(
 	        'section',
 	        { className: 'mainSection' },
-	        _react2.default.createElement(
-	          'h2',
-	          { id: 'Summary' },
-	          ' Summary '
-	        ),
 	        _react2.default.createElement(
 	          'p',
 	          null,
