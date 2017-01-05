@@ -13,6 +13,7 @@ var config = {
     path: BUILD_DIR,
     filename: 'bundle.js'
   },
+  watch: true,
   module : {
     loaders : [
       {
