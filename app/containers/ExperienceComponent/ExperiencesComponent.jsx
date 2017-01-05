@@ -16,7 +16,7 @@ class ExperiencesComponent extends React.Component {
 
   render() {
 
-    return <section>
+    return <section className="mainSection">
             <h2 id="Experience"> Professional Experience </h2>
             {this._renderSections()}
             </section>

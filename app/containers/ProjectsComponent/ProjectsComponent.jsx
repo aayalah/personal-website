@@ -18,7 +18,7 @@ class ProjectsComponent extends React.Component {
 
     console.log(this._renderSections())
 
-    return <section>
+    return <section className="mainSection">
             <h2 id="Projects"> Projects </h2>
             <NavigationComponent links={Object.keys(projectData)}/>
             {this._renderSections()}

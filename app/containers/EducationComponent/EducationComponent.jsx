@@ -15,7 +15,7 @@ class EducationComponent extends React.Component {
 
   render() {
 
-    return <section>
+    return <section className="mainSection">
             <h2 id="Education"> Education </h2>
             {this._renderSections()}
             </section>

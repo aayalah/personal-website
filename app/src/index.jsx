@@ -21,7 +21,6 @@ class App extends React.Component {
 
     return <div className="app">
           <HeaderComponent/>
-          <ProfileImageComponent/>
           <NavigationComponent/>
           <SummaryComponent/>
           <ProjectsComponent/>

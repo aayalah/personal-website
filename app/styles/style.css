@@ -34,7 +34,7 @@
 .app {
   display: flex;
   flex-flow: row wrap;
-  background-color: #DED9D9;
+  background-color: #ffffff;
 }
 
 .unit{
@@ -74,15 +74,14 @@
 }
 
 .header {
-  height: 100px;
   flex: 1 100%;
-
+  background-color: #363b40;
 }
 
 .imageSection {
   flex: 1 100%;
   display: flex;
-  flex-flow: row;
+  flex-flow: row wrap;
   justify-content: center;
   align-items: center;
   margin:20px;
@@ -101,6 +100,8 @@
   flex-flow: row;
   justify-content: center;
   align-items: center;
+  background-color: #363b40;
+  padding: .2em 1em;
 }
 
 a {
@@ -120,11 +121,54 @@ ul li {
 ul li a {
   padding: .2em 1em;
   color: #fff;
-  background-color: #036;
+  background-color: #363b40;
   margin: 1px;
 }
 
 ul li a:hover {
   color: #fff;
-  background-color: #8094F7;
+  background-color: #848b92;
+}
+
+.mainSection {
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    flex: 1 100%;
+    justify-content: center;
+}
+p {
+  align-self: flex-start;
+}
+
+section section {
+  flex: 1 100%;
+  align-self: flex-start;
+}
+
+.educationInfo {
+  flex: 1 100%;
+}
+div {
+  flex: 1 100%;
+display: flex;
+flex-flow: row wrap;
+align-items: center;
+justify-content: center;
+}
+
+.imageDiv {
+  flex: 1 100%;
+  display:flex;
+  flex-flow: row wrap;
+  align-items: center;
+  justify-content: center;
+}
+
+.name {
+  color: #ffffff;
+}
+
+.role {
+  color: #ffffff;
 }
