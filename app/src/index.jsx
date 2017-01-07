@@ -1,9 +1,12 @@
 
 import React from 'react'
 import {render} from 'react-dom'
-//import DataList from '../containers/DataList/DataList.jsx'
-//import Chart from '../containers/Chart/Chart.jsx'
+import { Router, Route, Link, browserHistory } from 'react-router'
+
+
 import styles from '../styles/style.css'
+import DataVis from '../containers/DataVis/DataVis.jsx'
+import ChallengeApp from '../containers/CodingChallenge/ChallengeApp.jsx'
 import HeaderComponent from '../containers/HeaderComponent/HeaderComponent.jsx'
 import ProfileImageComponent from '../containers/ProfileImageComponent/ProfileImageComponent.jsx'
 import NavigationComponent from '../containers/NavigationComponent/NavigationComponent.jsx'
@@ -30,5 +33,19 @@ class App extends React.Component {
   }
 
 }
+
+
+
+  /*render((
+    <Router history={browserHistory}>
+      <Route path="*" component={App}>
+        <Route path="/codingChallenge" component={ChallengeApp}/>
+        <Route path="/dataVis" component={DataVis}/>
+      </Route>
+
+    </Router>
+  ), document.getElementById('app'))*/
+
+
 
 render(<App/>, document.getElementById('app'))
