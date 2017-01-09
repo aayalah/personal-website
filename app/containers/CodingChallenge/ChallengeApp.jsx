@@ -1,3 +1,4 @@
+"use strict";
 import React from 'react'
 import {render} from 'react-dom'
 import CurrencyExchange from './components/CurrencyExchange.jsx'
@@ -5,7 +6,7 @@ import CurrencyExchange from './components/CurrencyExchange.jsx'
 
 
 
-export default class ChallengeApp extends React.Component {
+const ChallengeApp = React.createClass ({
 
 
   render() {
@@ -15,4 +16,6 @@ export default class ChallengeApp extends React.Component {
           </div>
   }
 
-}
+});
+
+export default ChallengeApp;

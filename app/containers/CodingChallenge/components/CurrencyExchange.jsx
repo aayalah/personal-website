@@ -1,3 +1,4 @@
+"use strict";
 import React from 'react'
 
 class CurrencyExchange extends React.Component {

@@ -1,3 +1,4 @@
+"use strict";
 import React from 'react'
 import {render} from 'react-dom'
 import DataList from '../DataList/DataList.jsx'
@@ -6,8 +7,7 @@ import styles from '../../styles/style.css'
 
 
 
-export default class DataVis extends React.Component {
-
+const DataVis  = React.createClass({
 
   render() {
 
@@ -17,4 +17,6 @@ export default class DataVis extends React.Component {
           </div>
   }
 
-}
+});
+
+export default DataVis;

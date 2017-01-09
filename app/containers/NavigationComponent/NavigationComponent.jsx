@@ -1,9 +1,10 @@
+"use strict";
 import React from 'react'
 import { Link } from 'react-router'
 import styles from '../../styles/style.css'
 
 
-class NavigationComponent extends React.Component {
+const NavigationComponent = React.createClass({
 
   render() {
     return <nav className="nav">
@@ -17,6 +18,6 @@ class NavigationComponent extends React.Component {
           </nav>
   }
 
-}
+});
 
-export default NavigationComponent
+export default NavigationComponent;
