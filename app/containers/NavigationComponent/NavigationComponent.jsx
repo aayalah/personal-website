@@ -1,10 +1,10 @@
 "use strict";
 import React from 'react'
-import { Link } from 'react-router'
+import { Link, withRouter } from 'react-router'
 import styles from '../../styles/style.css'
 
 
-const NavigationComponent = React.createClass({
+const NavigationComponent =  React.createClass({
 
   render() {
     return <nav className="nav">

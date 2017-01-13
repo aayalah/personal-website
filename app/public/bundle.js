@@ -62,59 +62,44 @@
 
 	var _DataVis2 = _interopRequireDefault(_DataVis);
 
-	var _HeaderComponent = __webpack_require__(371);
+	var _ChallengeApp = __webpack_require__(371);
+
+	var _ChallengeApp2 = _interopRequireDefault(_ChallengeApp);
+
+	var _HeaderComponent = __webpack_require__(373);
 
 	var _HeaderComponent2 = _interopRequireDefault(_HeaderComponent);
 
-	var _ProfileImageComponent = __webpack_require__(372);
+	var _ProfileImageComponent = __webpack_require__(374);
 
 	var _ProfileImageComponent2 = _interopRequireDefault(_ProfileImageComponent);
 
-	var _NavigationComponent = __webpack_require__(373);
+	var _NavigationComponent = __webpack_require__(375);
 
 	var _NavigationComponent2 = _interopRequireDefault(_NavigationComponent);
 
-	var _SummaryComponent = __webpack_require__(374);
+	var _SummaryComponent = __webpack_require__(376);
 
 	var _SummaryComponent2 = _interopRequireDefault(_SummaryComponent);
 
-	var _ProjectsComponent = __webpack_require__(375);
+	var _ProjectsComponent = __webpack_require__(377);
 
 	var _ProjectsComponent2 = _interopRequireDefault(_ProjectsComponent);
 
-	var _ExperiencesComponent = __webpack_require__(379);
+	var _ExperiencesComponent = __webpack_require__(381);
 
 	var _ExperiencesComponent2 = _interopRequireDefault(_ExperiencesComponent);
 
-	var _EducationComponent = __webpack_require__(381);
+	var _EducationComponent = __webpack_require__(383);
 
 	var _EducationComponent2 = _interopRequireDefault(_EducationComponent);
 
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
-	//import CurrencyExchange from '../CodingChallenge/components/CurrencyExchange.jsx'
-
-
-	var ChallengeApp = _react2.default.createClass({
-	  displayName: 'ChallengeApp',
+	var Home = _react2.default.createClass({
+	  displayName: 'Home',
 	  render: function render() {
-
-	    return _react2.default.createElement(
-	      'div',
-	      { className: 'app' },
-	      '//',
-	      _react2.default.createElement(CurrencyExchange, null)
-	    );
-	  }
-	});
-	//import ChallengeApp from '../containers/CodingChallenge/ChallengeApp.jsx'
-
-
-	var App = _react2.default.createClass({
-	  displayName: 'App',
-	  render: function render() {
-
-	    return _react2.default.createElement(
+	    _react2.default.createElement(
 	      'div',
 	      { className: 'app' },
 	      _react2.default.createElement(_HeaderComponent2.default, null),
@@ -127,13 +112,22 @@
 	  }
 	});
 
+	var App = _react2.default.createClass({
+	  displayName: 'App',
+	  render: function render() {
+
+	    return _react2.default.createElement('div', null);
+	  }
+	});
+
 	(0, _reactDom.render)(_react2.default.createElement(
 	  _reactRouter.Router,
 	  { history: _reactRouter.browserHistory },
 	  _react2.default.createElement(
 	    _reactRouter.Route,
 	    { path: '/', component: App },
-	    _react2.default.createElement(_reactRouter.Route, { path: '/codingChallenge', component: ChallengeApp }),
+	    _react2.default.createElement(_reactRouter.IndexRoute, { component: Home }),
+	    _react2.default.createElement(_reactRouter.Route, { path: '/codingChallenge', component: _ChallengeApp2.default }),
 	    _react2.default.createElement(_reactRouter.Route, { path: '/dataVis', component: _DataVis2.default })
 	  )
 	), document.getElementById('app'));
@@ -61574,6 +61568,205 @@
 /* 371 */
 /***/ function(module, exports, __webpack_require__) {
 
+	"use strict";
+
+	Object.defineProperty(exports, "__esModule", {
+	  value: true
+	});
+
+	var _react = __webpack_require__(1);
+
+	var _react2 = _interopRequireDefault(_react);
+
+	var _reactDom = __webpack_require__(32);
+
+	var _CurrencyExchange = __webpack_require__(372);
+
+	var _CurrencyExchange2 = _interopRequireDefault(_CurrencyExchange);
+
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+	var ChallengeApp = _react2.default.createClass({
+	  displayName: 'ChallengeApp',
+	  render: function render() {
+
+	    return _react2.default.createElement(
+	      'div',
+	      { className: 'app' },
+	      _react2.default.createElement(_CurrencyExchange2.default, null)
+	    );
+	  }
+	});
+
+	exports.default = ChallengeApp;
+
+/***/ },
+/* 372 */
+/***/ function(module, exports, __webpack_require__) {
+
+	"use strict";
+
+	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+	var _react = __webpack_require__(1);
+
+	var _react2 = _interopRequireDefault(_react);
+
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+	function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+
+	function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+
+	var CurrencyExchange = function (_React$Component) {
+	  _inherits(CurrencyExchange, _React$Component);
+
+	  function CurrencyExchange(props) {
+	    _classCallCheck(this, CurrencyExchange);
+
+	    var _this = _possibleConstructorReturn(this, (CurrencyExchange.__proto__ || Object.getPrototypeOf(CurrencyExchange)).call(this, props));
+
+	    _this.state = { currencies: "" };
+	    return _this;
+	  }
+
+	  _createClass(CurrencyExchange, [{
+	    key: "componentDidMount",
+	    value: function componentDidMount() {
+	      var _this2 = this;
+
+	      fetch('https://api.fixer.io/latest').then(function (response) {
+	        return response.json();
+	      }).then(function (responseData) {
+	        return _this2.setState({ currencies: responseData["rates"] });
+	      }).catch(function (error) {
+	        return console.log("error");
+	      });
+	    }
+	  }, {
+	    key: "render",
+	    value: function render() {
+	      return _react2.default.createElement(
+	        "div",
+	        null,
+	        _react2.default.createElement(
+	          "h1",
+	          null,
+	          "Currency Exchange"
+	        ),
+	        " ",
+	        _react2.default.createElement(DataInput, { currencies: this.state.currencies })
+	      );
+	    }
+	  }]);
+
+	  return CurrencyExchange;
+	}(_react2.default.Component);
+
+	// https://api.fixer.io/latest
+
+
+	var DataInput = function (_React$Component2) {
+	  _inherits(DataInput, _React$Component2);
+
+	  function DataInput(props) {
+	    _classCallCheck(this, DataInput);
+
+	    var _this3 = _possibleConstructorReturn(this, (DataInput.__proto__ || Object.getPrototypeOf(DataInput)).call(this, props));
+
+	    _this3.state = { inputValue: "", currencySelected: "", displayList: false };
+	    _this3.inputIsChanged = _this3.inputIsChanged.bind(_this3);
+	    _this3.optionSelected = _this3.optionSelected.bind(_this3);
+	    _this3.displayCurrList = _this3.displayCurrList.bind(_this3);
+	    return _this3;
+	  }
+
+	  _createClass(DataInput, [{
+	    key: "inputIsChanged",
+	    value: function inputIsChanged(e) {
+	      this.setState({ inputValue: e.target.value });
+	    }
+	  }, {
+	    key: "optionSelected",
+	    value: function optionSelected(e) {
+	      this.setState({ currencySelected: e.target.value });
+	    }
+	  }, {
+	    key: "renderCurrencies",
+	    value: function renderCurrencies() {
+
+	      return [_react2.default.createElement(
+	        "option",
+	        { key: "0", value: this.state.currencySelected },
+	        this.state.currencySelected
+	      ), Object.keys(this.props.currencies).map(function (item, key) {
+	        return _react2.default.createElement(
+	          "option",
+	          { key: key, value: item },
+	          item
+	        );
+	      })];
+	    }
+	  }, {
+	    key: "convertCurrency",
+	    value: function convertCurrency() {
+	      var type = this.state.currencySelected;
+	      var intoEuros = this.state.inputValue / this.props.currencies[type];
+	      return intoEuros;
+	    }
+	  }, {
+	    key: "displayCurrList",
+	    value: function displayCurrList() {
+	      this.setState({ displayList: true });
+	    }
+	  }, {
+	    key: "createList",
+	    value: function createList() {
+	      var _this4 = this;
+
+	      var euros = this.convertCurrency();
+	      console.log(euros);
+	      return Object.keys(this.props.currencies).map(function (item, key) {
+	        return _react2.default.createElement(
+	          "div",
+	          { key: key },
+	          " ",
+	          euros * _this4.props.currencies[item] + " -> " + item,
+	          " "
+	        );
+	      });
+	    }
+	  }, {
+	    key: "render",
+	    value: function render() {
+	      return _react2.default.createElement(
+	        "div",
+	        null,
+	        _react2.default.createElement("input", { value: this.state.inputValue, onChange: this.inputIsChanged }),
+	        _react2.default.createElement(
+	          "select",
+	          { value: this.state.currencySelected, onChange: this.optionSelected },
+	          this.renderCurrencies()
+	        ),
+	        _react2.default.createElement(
+	          "button",
+	          { onClick: this.displayCurrList },
+	          "Enter"
+	        ),
+	        this.state.displayList ? this.createList() : ""
+	      );
+	    }
+	  }]);
+
+	  return DataInput;
+	}(_react2.default.Component);
+
+/***/ },
+/* 373 */
+/***/ function(module, exports, __webpack_require__) {
+
 	'use strict';
 
 	Object.defineProperty(exports, "__esModule", {
@@ -61590,7 +61783,7 @@
 
 	var _style2 = _interopRequireDefault(_style);
 
-	var _ProfileImageComponent = __webpack_require__(372);
+	var _ProfileImageComponent = __webpack_require__(374);
 
 	var _ProfileImageComponent2 = _interopRequireDefault(_ProfileImageComponent);
 
@@ -61628,7 +61821,7 @@
 	exports.default = HeaderComponent;
 
 /***/ },
-/* 372 */
+/* 374 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -61705,7 +61898,7 @@
 	exports.default = ProfileImageComponent;
 
 /***/ },
-/* 373 */
+/* 375 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -61788,7 +61981,7 @@
 	exports.default = NavigationComponent;
 
 /***/ },
-/* 374 */
+/* 376 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -61845,7 +62038,7 @@
 	exports.default = SummaryComponent;
 
 /***/ },
-/* 375 */
+/* 377 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -61866,11 +62059,11 @@
 
 	var _data = __webpack_require__(239);
 
-	var _ProjectTypeComponent = __webpack_require__(376);
+	var _ProjectTypeComponent = __webpack_require__(378);
 
 	var _ProjectTypeComponent2 = _interopRequireDefault(_ProjectTypeComponent);
 
-	var _NavigationComponent = __webpack_require__(378);
+	var _NavigationComponent = __webpack_require__(380);
 
 	var _NavigationComponent2 = _interopRequireDefault(_NavigationComponent);
 
@@ -61924,7 +62117,7 @@
 	exports.default = ProjectsComponent;
 
 /***/ },
-/* 376 */
+/* 378 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -61943,7 +62136,7 @@
 
 	var _style2 = _interopRequireDefault(_style);
 
-	var _ProjectComponent = __webpack_require__(377);
+	var _ProjectComponent = __webpack_require__(379);
 
 	var _ProjectComponent2 = _interopRequireDefault(_ProjectComponent);
 
@@ -61995,7 +62188,7 @@
 	exports.default = ProjectTypeComponent;
 
 /***/ },
-/* 377 */
+/* 379 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -62066,7 +62259,7 @@
 	exports.default = ProjectComponent;
 
 /***/ },
-/* 378 */
+/* 380 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -62140,7 +62333,7 @@
 	exports.default = NavigationComponent;
 
 /***/ },
-/* 379 */
+/* 381 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -62161,7 +62354,7 @@
 
 	var _data = __webpack_require__(239);
 
-	var _ExperienceComponent = __webpack_require__(380);
+	var _ExperienceComponent = __webpack_require__(382);
 
 	var _ExperienceComponent2 = _interopRequireDefault(_ExperienceComponent);
 
@@ -62213,7 +62406,7 @@
 	exports.default = ExperiencesComponent;
 
 /***/ },
-/* 380 */
+/* 382 */
 /***/ function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -62288,7 +62481,7 @@
 	exports.default = ExperienceComponent;
 
 /***/ },
-/* 381 */
+/* 383 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -62309,7 +62502,7 @@
 
 	var _data = __webpack_require__(239);
 
-	var _EducationInfoComponent = __webpack_require__(382);
+	var _EducationInfoComponent = __webpack_require__(384);
 
 	var _EducationInfoComponent2 = _interopRequireDefault(_EducationInfoComponent);
 
@@ -62360,7 +62553,7 @@
 	exports.default = EducationComponent;
 
 /***/ },
-/* 382 */
+/* 384 */
 /***/ function(module, exports, __webpack_require__) {
 
 	"use strict";

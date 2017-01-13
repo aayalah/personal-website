@@ -1,12 +1,12 @@
 "use strict";
 import React from 'react'
 import {render} from 'react-dom'
-import { Router, Route, Link, browserHistory } from 'react-router'
+import { Router, Route, Link, hashHistory, withRouter, IndexRoute } from 'react-router'
 
 
 import styles from '../styles/style.css'
 import DataVis from '../containers/DataVis/DataVis.jsx'
-//import ChallengeApp from '../containers/CodingChallenge/ChallengeApp.jsx'
+import ChallengeApp from '../containers/CodingChallenge/ChallengeApp.jsx'
 import HeaderComponent from '../containers/HeaderComponent/HeaderComponent.jsx'
 import ProfileImageComponent from '../containers/ProfileImageComponent/ProfileImageComponent.jsx'
 import NavigationComponent from '../containers/NavigationComponent/NavigationComponent.jsx'
@@ -15,23 +15,19 @@ import ProjectsComponent from '../containers/ProjectsComponent/ProjectsComponent
 import ExperiencesComponent from '../containers/ExperienceComponent/ExperiencesComponent.jsx'
 import EducationComponent from '../containers/EducationComponent/EducationComponent.jsx'
 
-//import CurrencyExchange from '../CodingChallenge/components/CurrencyExchange.jsx'
-
-
-
-
-const ChallengeApp = React.createClass ({
-
-
+const Home = React.createClass({
   render() {
-
-    return <div className="app">
-          //<CurrencyExchange/>
-          </div>
+    <div className="app">
+    <HeaderComponent/>
+    <NavigationComponent/>
+    <SummaryComponent/>
+    <ProjectsComponent/>
+    <ExperiencesComponent/>
+    <EducationComponent/>
+    </div>
   }
 
-});
-
+})
 
 
 const App = React.createClass({
@@ -39,25 +35,21 @@ const App = React.createClass({
 
   render() {
 
-    return <div className="app">
-          <HeaderComponent/>
-          <NavigationComponent/>
-          <SummaryComponent/>
-          <ProjectsComponent/>
-          <ExperiencesComponent/>
-          <EducationComponent/>
-          </div>
+    return <div></div>
+
+
   }
 
-});
+})
 
 
 
   render((
-    <Router history={browserHistory}>
-      <Route path="/" component={App}>
-        <Route path="/codingChallenge" component={ChallengeApp}/>
-        <Route path="/dataVis" component={DataVis}/>
+    <Router history={hashHistory}>
+      <Route path="*" component={App}>
+        //<IndexRoute component={Home}/>
+      <Route path="/codingChallenge" component={ChallengeApp}/>
+      <Route path="/dataVis" component={DataVis}/>
       </Route>
 
     </Router>
