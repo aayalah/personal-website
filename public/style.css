@@ -27,6 +27,7 @@
   font-size: 15pt;
   color: green;
 }
+
 .time {
   font-size: 12pt;
 }
@@ -149,6 +150,7 @@ section section {
 .educationInfo {
   flex: 1 100%;
 }
+
 div {
   flex: 1 100%;
 display: flex;
