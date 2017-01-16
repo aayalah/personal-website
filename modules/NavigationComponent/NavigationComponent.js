@@ -2,19 +2,19 @@
 import React from 'react'
 import { Link, withRouter } from 'react-router'
 import styles from '../../public/style.css'
-
+import NavLink from '../NavLink'
 
 const NavigationComponent =  React.createClass({
 
   render() {
     return <nav className="nav">
             <ul>
-              <li><Link to="/about">About</Link></li>
-              <<li><Link to="/projects">Projects</Link></li>
-              <li><Link to="/professionalExperience">Professional Experience</Link></li>
-              <li><Link to="/education">Education</Link></li>
-              <li><Link to="/codingChallenge">Coding Challenge</Link></li>
-              <li><Link to="/dataVis">Data Visualization</Link></li>
+              <li><NavLink to="/" onlyActiveOnIndex={true}>About</NavLink></li>
+              <li><NavLink to="/projects">Projects</NavLink></li>
+              <li><NavLink to="/experiences">Professional Experience</NavLink></li>
+              <li><NavLink to="/education">Education</NavLink></li>
+              <li><NavLink to="/codingChallenge">Coding Challenge</NavLink></li>
+              <li><NavLink to="/dataVis">Data Visualization</NavLink></li>
             </ul>
           </nav>
   }

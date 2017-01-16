@@ -172,3 +172,7 @@ justify-content: center;
 .role {
   color: #ffffff;
 }
+
+.active {
+  color: grey;
+}
