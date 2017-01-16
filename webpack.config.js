@@ -1,24 +1,23 @@
 var webpack = require('webpack');
 var path = require('path');
 
-var BUILD_DIR = path.resolve(__dirname, 'app/public');
-var APP_DIR = path.resolve(__dirname, 'app/src');
+/*var BUILD_DIR = path.resolve(__dirname, 'app/public');
+var APP_DIR = path.resolve(__dirname, 'app');
 var REACT_DIR = path.resolve(__dirname, 'app/containers')
 var ASSETS_DIR = path.resolve(__dirname, 'app/assets')
-var STYLE_DIR = path.resolve(__dirname, 'app/styles')
+var STYLE_DIR = path.resolve(__dirname, 'app/styles')*/
 
 var config = {
-  entry: APP_DIR + '/index.jsx',
+  entry: './index.js',
   output: {
-    path: BUILD_DIR,
-    filename: 'bundle.js'
+    path: 'public',
+    filename: 'bundle.js',
+    publicPath: '/'
   },
-  watch: true,
   module : {
     loaders : [
       {
         test : /\.jsx?/,
-        include : [APP_DIR,REACT_DIR],
         loader : 'babel'
       },
       { test: /\.js$/,
@@ -30,7 +29,12 @@ var config = {
         exclude: /node_modules/
       }
     ]
-  }
+  },
+  plugins: process.env.NODE_ENV === 'production' ? [
+    new webpack.optimize.DedupePlugin(),
+    new webpack.optimize.OccurrenceOrderPlugin(),
+    new webpack.optimize.UglifyJsPlugin()
+  ] : []
 };
 
 module.exports = config;
