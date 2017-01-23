@@ -1,5 +1,5 @@
 import React from 'react'
-import { Link } from 'react-router'
+import Link from 'react-router/lib/Link'
 import NavLink from './NavLink'
 import HeaderComponent from './HeaderComponent/HeaderComponent'
 import NavigationComponent from './NavigationComponent/NavigationComponent'

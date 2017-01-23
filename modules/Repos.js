@@ -1,6 +1,6 @@
 import React from 'react'
 // Repos.js
-import { Link } from 'react-router'
+import Link from 'react-router/lib/Link'
 import NavLink from './NavLink'
 export default React.createClass({
   contextTypes: {
